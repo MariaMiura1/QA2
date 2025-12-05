@@ -1,20 +1,27 @@
-# Asistente Virtual
+# 🤖 Virtual Assistant QA Tests
 
-Este repositorio contiene un asistente virtual básico que iremos ampliando paso a paso.  
-El objetivo es crear un asistente capaz de responder preguntas, procesar texto y conectar con diferentes servicios.
+This project simulates QA work for a virtual assistant, focusing on test design and automation using Python, Pytest and a Jenkins CI pipeline.
 
-## Funcionalidades iniciales
-- Responder saludos
-- Decir la hora actual
-- Responder mensajes genéricos
+The goal is to validate that a simple virtual assistant responds correctly to different user intents (greeting, time, help, unknown queries), similar to real-world testing of AI-based assistants and smart devices.
 
-## Próximas mejoras
-- Añadir más respuestas inteligentes
-- Crear una interfaz web o chatbot
-- Conexión con APIs externas
+## 🔧 Tech stack
 
-## Ejecución
-Cuando el archivo principal (`assistant.py`) esté creado, se ejecutará con:
+- Python 3
+- Pytest for automated tests
+- Jenkins (via Jenkinsfile) for CI
+- GitHub Codespaces as development environment
+
+## 🧩 What is tested?
+
+- Correct response for known intents:
+  - Greeting
+  - Time request
+  - Help / fallback
+- Handling of unknown inputs
+- Basic validation of response structure
+
+## ▶️ How to run tests (locally or in Codespaces)
 
 ```bash
-python assistant.py
+pip install -r requirements.txt
+pytest -v
